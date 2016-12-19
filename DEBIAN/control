@@ -1,0 +1,10 @@
+Package: aruba-serclient
+Priority: extra
+Section: admin
+Installed-Size: 672
+Maintainer: info@aruba.it
+Architecture: all
+Version: 0.01-1
+Depends: python2.7 | python2.6 | python2.5 | python2.4, lsb-base (>= 3.2-14)
+Provides: aruba-serclient
+Description: Package created with checkinstall 1.6.2
