@@ -1,4 +1,5 @@
 #!/bin/sh
-
-insserv -r serclient
-/etc/init.d/serclient stop
+set -e
+if [ -x "/etc/init.d/serclient" ]; then
+	invoke-rc.d serclient stop || exit $?
+fi

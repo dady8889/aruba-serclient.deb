@@ -129,7 +129,7 @@ def getConfigurationFromINI():
 	defaults = _getConfigurationDefaults()
 	ini = ConfigParser()
 	x = os.path.join(_ROOT, 'serclient.ini')
-	v = ini.read([x, '/opt/serclient/serclient.ini'])
+	v = ini.read([x, '/etc/default/serclient.ini'])
 	c = dict(ini._sections)
 	for k, v in defaults.items():
 		if k in c.keys():

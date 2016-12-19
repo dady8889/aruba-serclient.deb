@@ -1,4 +1,6 @@
 #!/bin/sh
-
-insserv -d serclient
-/etc/init.d/serclient restart
+set -e
+if [ -x "/etc/init.d/serclient" ]; then
+	update-rc.d serclient defaults >/dev/null
+	invoke-rc.d serclient start || exit $?
+fi

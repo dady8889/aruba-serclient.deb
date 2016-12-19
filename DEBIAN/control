@@ -1,10 +1,11 @@
 Package: aruba-serclient
-Priority: extra
-Section: admin
-Installed-Size: 672
-Maintainer: info@aruba.it
+Source: aruba-serclient
+Version: 0.01-2
 Architecture: all
-Version: 0.01-1
-Depends: python2.7 | python2.6 | python2.5 | python2.4, lsb-base (>= 3.2-14)
-Provides: aruba-serclient
-Description: Package created with checkinstall 1.6.2
+Maintainer: Aruba S.p.A. <info@aruba.it>
+Installed-Size: 672
+Depends: lsb-base (>= 3.2-14), python:any (>= 2.7)
+Section: admin
+Priority: extra
+Homepage: https://github.com/pmcloud/ExtraControl
+Description: Automate common system administration tasks
