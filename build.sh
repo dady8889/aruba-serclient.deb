@@ -6,6 +6,8 @@
 VERSION="0.01"
 DEBIAN_RELEASE="2"
 
+set -e
+
 cd CONTENTS
 find usr -type f -exec md5sum "{}" ";" > ../DEBIAN/md5sums
 GZIP="-9 -n" tar czvf ../data.tar.gz *

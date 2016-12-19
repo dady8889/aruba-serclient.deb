@@ -14,7 +14,7 @@ DESC="Aruba serial client"
 NAME=serclient
 DAEMON=/usr/lib/python2.7/dist-packages/serclient/service.py
 PIDFILE=/run/$NAME.pid
-DAEMON_ARGS="--pid /var/run/$NAME.pid --log /var/log/serclient.log --port /dev/ttyS1"
+DAEMON_ARGS="--pid /run/$NAME.pid --log /var/log/serclient.log --port /dev/ttyS1"
 SCRIPTNAME=/etc/init.d/$NAME
 BINARY=python
 
