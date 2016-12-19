@@ -1,0 +1,13 @@
+/var/log/serclient.log {
+    weekly
+    rotate 15
+    compress
+    delaycompress
+    notifempty
+    create 640 root root
+    postrotate
+        if /etc/init.d/serclient status > /dev/null ; then \
+            /etc/init.d/serclient restart > /dev/null; \
+        fi;
+    endscript
+}
