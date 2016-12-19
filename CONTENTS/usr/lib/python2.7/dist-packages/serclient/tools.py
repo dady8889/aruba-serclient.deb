@@ -156,7 +156,8 @@ def configureLogging(config):
 		rf.setFormatter(formatter)
 		logger.addHandler(rf)
 		logger.info('\n---------\nLog closed on %s.\n---------\n' % time.asctime())
-		if getRestartGUID(remove=False) == None: rf.doRollover()
+		# Use Debian logrotate
+		#if getRestartGUID(remove=False) == None: rf.doRollover()
 	address = c['syslog_address']
 	if address != '':
 		if '/' not in address: 
