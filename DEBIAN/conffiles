@@ -1,2 +1,3 @@
 /etc/default/serclient.ini
 /etc/init.d/serclient
+/etc/logrotate.d/serclient
