@@ -6,6 +6,7 @@
 VERSION="0.01"
 DEBIAN_RELEASE="3"
 # Update changelog.Debian.gz
+# Tag the release
 
 set -e
 
