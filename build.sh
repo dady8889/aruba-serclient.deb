@@ -24,5 +24,5 @@ set -e
 ar rv aruba-serclient_${VERSION}-${DEBIAN_RELEASE}_all.deb debian-binary control.tar.gz data.tar.gz
 rm -f control.tar.gz data.tar.gz
 
-lintian --display-info --display-experimental --pedantic --show-overrides --no-tag-display-limit --verbose \
-    aruba-serclient_${VERSION}-${DEBIAN_RELEASE}_all.deb
+#lintian --display-info --display-experimental --pedantic --show-overrides --no-tag-display-limit --verbose \
+#    aruba-serclient_${VERSION}-${DEBIAN_RELEASE}_all.deb

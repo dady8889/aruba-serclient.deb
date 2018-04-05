@@ -3,5 +3,6 @@ set -e
 if [ -x "/etc/init.d/serclient" ]; then
 	update-rc.d serclient defaults >/dev/null
 	invoke-rc.d serclient start || exit $?
+	touch /var/log/serclient.log
 	chmod 0640 /var/log/serclient.log
 fi
